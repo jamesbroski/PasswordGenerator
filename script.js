@@ -29,6 +29,25 @@ function generatePassword() {
     alert(
       "Password length must be at least 8 characters and no more than 128 characters"
     );
+  } else {
+    if (confirm("Click OK to confirm including special characters")) {
+      userArray = specialCharacters;
+    }
+    if (confirm("Click OK to confirm including numeric characters")) {
+      userArray = numericCharacters;
+    }
+    if (confirm("Click OK to confirm including lowercase characters")) {
+      userArray = lowercaseCharacters;
+    }
+    if (confirm("Click OK to confirm including uppercase characters")) {
+      userArray = uppercaseCharacters;
+    } else {
+      for (var i = 0; i < box1; i++) {
+        var char123 = Math.floor(Math.char123() * userArray.length);
+        successful += userArray[char123];
+        console.log(successful);
+      }
+    }
   }
 }
 
