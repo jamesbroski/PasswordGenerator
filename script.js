@@ -6,6 +6,7 @@ var specialCharacters = "!#$%&'()*+,-./:;<=>?@[]^_`{|}~".split("");
 var numericCharacters = "0123456789".split("");
 var lowercaseCharacters = "abcdefghijklmnopqrstuvwxyz".split("");
 var uppercaseCharacters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ".split("");
+var userArray = [];
 
 // Write password to the #password input
 function writePassword(event) {
@@ -18,9 +19,6 @@ function writePassword(event) {
 
 //MY CODE
 function generatePassword() {
-  var userArray = [];
-  var successful = "";
-
   var box1 = prompt(
     "How many characters would you like your password to contain?"
   );
@@ -31,24 +29,25 @@ function generatePassword() {
     );
   } else {
     if (confirm("Click OK to confirm including special characters")) {
-      userArray = specialCharacters;
+      userArray = specialCharacters.concat(specialCharacters);
     }
     if (confirm("Click OK to confirm including numeric characters")) {
-      userArray = numericCharacters;
+      userArray = numericCharacters.concat;
     }
     if (confirm("Click OK to confirm including lowercase characters")) {
-      userArray = lowercaseCharacters;
+      userArray = lowercaseCharacters.concat;
     }
     if (confirm("Click OK to confirm including uppercase characters")) {
-      userArray = uppercaseCharacters;
-    } else {
-      for (var i = 0; i < box1; i++) {
-        var char123 = Math.floor(Math.char123() * userArray.length);
-        successful += userArray[char123];
-        console.log(successful);
-      }
+      userArray = uppercaseCharacters.concat;
     }
   }
+  var finalPass = "";
+  for (var i = 0; i < box1; i++) {
+    var char123 = Math.floor(Math.char123() * userArray.length);
+    finalPass += userArray[char123];
+    console.log(finalPass);
+  }
+  return finalPass;
 }
 
 // Add event listener to generate button
