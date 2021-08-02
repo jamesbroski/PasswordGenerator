@@ -32,18 +32,18 @@ function generatePassword() {
       userArray = specialCharacters.concat(specialCharacters);
     }
     if (confirm("Click OK to confirm including numeric characters")) {
-      userArray = numericCharacters.concat;
+      userArray = numericCharacters.concat(numericCharacters);
     }
     if (confirm("Click OK to confirm including lowercase characters")) {
-      userArray = lowercaseCharacters.concat;
+      userArray = lowercaseCharacters.concat(lowercaseCharacters);
     }
     if (confirm("Click OK to confirm including uppercase characters")) {
-      userArray = uppercaseCharacters.concat;
+      userArray = uppercaseCharacters.concat(uppercaseCharacters);
     }
   }
   var finalPass = "";
   for (var i = 0; i < box1; i++) {
-    var char123 = Math.floor(Math.char123() * userArray.length);
+    var char123 = Math.floor(Math.random() * userArray.length);
     finalPass += userArray[char123];
     console.log(finalPass);
   }
