@@ -13,6 +13,8 @@ The user needed to choose a password length between 8 and 128 characters. The pa
 
 The user was led through prompts + confirm functions throughout the password generation process
 
+Link to deployed application: https://jamesbroski.github.io/PasswordGenerator/
+
 Below is an example of what a prospective user will see when engaing with the password generator:
 
 <img width="1280" alt="Screen Shot 2021-08-01 at 7 47 27 PM" src="https://user-images.githubusercontent.com/87332492/127794353-dee5e6d1-48b4-43f1-ad5e-4465a042ac56.png">
