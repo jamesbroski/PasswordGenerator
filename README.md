@@ -1,3 +1,5 @@
+![license badge](https://img.shields.io/badge/License-MIT-lightgrey.svg)
+
 # PasswordGenerator
 
 In this assignment, we were asked to create a password generator from already established HTML & CSS code files
